@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{enumitem}
+
+
+\begin{document}
+
+\begin{center}\Large\textbf{SOEN6011 Project: Problem-1}\end{center}
+\begin{center}\author{Pal Patel}\end{center}
+
+\begin{flushleft}\Large\textbf{Function: B(x,y)}\hfill\textbf{40197897-Pal Patel}\end{flushleft}
+
+\section{Introduction}
+    $B(x,y)$ stands for the beta function, also known as the beta integral. The beta function is an eccentric function and was studied by Euler and Legendre which is why it is also called Euler's integral. Mathematically, Beta functions describes the relation between the set of inputs and outputs.\\ 
+\noindent The standard Beta function \textbf{$B(x,y)$}-
+    \begin{itemize}
+        \item $B(x,y)$ = $\int_{0}^{1} {t^{x-1}}{(1-t)^{y-1}}dt$ \textbf{Where x,y $>$ 0} \cite{gammabeta}
+    \end{itemize}\\
+    
+\noindent The factorial form of the Beta function \textbf{$B(x,y)$}-
+    \begin{itemize}
+        \item $B(x,y) = \frac{(x-1)! (y-1)!}{(x+y-1)!}$ \cite{collegedunia}
+    \end{itemize}
+    
+\section{Domain and Co-Domain}
+    \begin{itemize}
+        \item The Beta function is defined in the domains of real numbers.
+        \item The Co-Domain of the Beta Function also falls in the real numbers.
+    \end{itemize}
+    
+\section{Characteristics of the Beta Function}
+    \begin{itemize}
+        \item The Beta function is symmetric, meaning $B(x,y)$ = $B(y,x)$. This means that the order of the parameters do not affect the output of the function.
+        \item The relationship between the Beta and Gamma function can be given as- $B(x,y)$ = $\frac{\Gamma x\Gamma y} {\Gamma z}$ \cite{wikipedia}
+        \item The beta function satisfies the truth that each input is mapped to one output.
+       Some mathematical properties of the Beta function are-
+        \begin{itemize}
+            \item $B(p, q)$ = $B(p, q+1) + B(p+1, q)$ 
+            \item $B(p, q+1)$ = $B(p, q). [\frac{q}{p+q}]$
+            \item $B(p+1, q)$ = $B(p, q). [\frac{p}{p+q}]$
+        \end{itemize}
+    \end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{gammabeta}
+\url{https://homepage.tudelft.nl/11r49/documents/wi4006/gammabeta.pdf}
+
+\bibitem{collegedunia}
+\url{https://collegedunia.com/exams/beta-function-definition-properties-formula-and-examples-mathematics-articleid-5443}
+
+\bibitem{wikipedia}
+\url{https://en.wikipedia.org/wiki/Beta\_function}
+\end{thebibliography}
+    
+\end{document}
