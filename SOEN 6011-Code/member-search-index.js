@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Beta","l":"Beta()","u":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"Beta","l":"gamma(double)"},{"p":"<Unnamed>","c":"Beta","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"<Unnamed>","c":"Beta","l":"sq(double)"},{"p":"<Unnamed>","c":"TestCasesBeta","l":"TestCasesBeta()","u":"%3Cinit%3E()"}];updateSearchResults();
