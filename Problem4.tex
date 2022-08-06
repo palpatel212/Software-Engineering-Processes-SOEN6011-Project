@@ -1,0 +1,144 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{algorithm}
+\usepackage{fullpage}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{graphics}
+\title{SOEN6011_Problem4}
+\author{Pal Patel}
+\date{August 2022}
+
+\begin{document}
+\begin{center}\Large\textbf{SOEN6011 Project: Problem-4}\end{center}
+\begin{center}\author{Pal Patel}\end{center}
+
+\begin{flushleft}\Large\textbf{Function: B(x,y)}\hfill\textbf{40197897-Pal Patel}\end{flushleft}
+
+\section*{4.1 Programming Style}
+Coding Style is the set of guidelines to be followed while implementing the source code for a software program\cite{programming}.
+
+\section*{4.2 Error handling}
+Exception handling is the process of responding to unwanted or unexpected events when a computer program runs\cite{erorrs}.
+When an error occurs, the situation needs to be handled by appropriate error exception strategy. In some cases, the system might even crash if the exceptions are not handled properly.
+
+In the code attached with the submission, try catch blocks have been including right from the start where the inputs to the beta function are being taken. If the user does not enter numbers and enters text, for instance, he would have an Input Mismatch exception. Similarly, the exception where any one or both of the inputs are negative should be caught in the catch block there after.
+\newline
+\begin{figure}[h!]
+\centering
+   \includegraphics[scale=0.45]{Exceptions.png}
+   \caption{Exception Handling as per implementation}
+\end{figure}
+\pagebreak
+
+
+\section*{4.3 Debugger}
+A debugger or debugging tool is a computer program used to test and debug other programs (the "target" program).  \cite{debug}.
+Debugging allows the programmer to track the operations of the program and to monitor the changes in the resources used.
+Debugging is a very useful tool to fix bugs and logical errors/.
+For the project, the debugger in built in the Eclipse IDE has been used.
+
+\textbf{Benefits of using the Eclipse Debugger}
+\begin{itemize}
+    \item The eclipse debugging tool is easy to use.
+    \item The logs provided by the debugger are valid and sufficient enough of bug fixing.
+    \item The tool is easily available to all programmers for use.
+\end{itemize}
+\textbf{Limitations of the Eclipse Debugger}
+\begin{itemize}
+    \item Complex to use for large applications and codes.
+\end{itemize}
+\begin{figure}[h!]
+\centering
+   \includegraphics[scale=0.6]{Debug.PNG}
+   \caption{Eclipse Debugger}
+\end{figure}
+\pagebreak
+\section*{4.4 Quality Attributes}
+\begin{enumerate}
+    \item Portable
+\begin{description}
+    \item Java has the feature of WORA- Write Once Read Anywhere, meaning that a bytecode obtained after compilation can be run on any platform easily. 
+\end{description}
+\item Space-efficient
+\begin{description}
+    \item While using the factorial method to fin the calculation for the beta function, tail recursion has been used for calculating the factorial. this would ensure that the stakc does not overflow.
+\end{description}
+
+\item Correct
+\begin{description}
+    \item All the test cases were passed for the functions building the code and hence the code can be claimed correct.
+\end{description}
+
+\item Robust
+\begin{description}
+    \item The entered data is validated and exceptions are checked for and thus the code is robust.
+\end{description}
+\item Maintainable
+\begin{description}
+    \item The entire code has been broken down into appropriate functions and calls have been made as necessary, This makes it easy for any programmer to change it without much hassle.
+\end{description}
+
+\item Readable
+\begin{description}
+    \item The code is simply written and put. It is readable enough for any programmer to understand and modify accordingly. 
+    \item Appropriate comment lines are given for clarification purposes.
+\end{description}
+
+\item Time Efficient
+\begin{description}
+    \item The testing of the code takes only 1 millisecond to run 4 test cases of different kinds.
+    
+\end{description}
+\end{enumerate}
+
+\section*{4.5 CheckStyle}
+Checkstyle is coding tool that keeps the programmers adhere to the coding standards followed globally. Checkstyle can check many aspects of your source code. It can find class design problems, method design problems. It also has the ability to check code layout and formatting issue \cite{check}.
+
+The checkstyle tool on the Eclipse IDe has been used on my code.
+\textbf{Benefits of CheckStyle:}
+\begin{itemize}
+    \item Compliance in the program remains in check.
+    \item Ability of creating your own rules. Eclipse defines a large set of styles, but checkstyle has more, and you can add your own custom rules \cite{stackoverflow}
+\end{itemize}
+\textbf{Limitations of CheckStyle:}
+\begin{itemize}
+    \item Checkstyle is a single file static analysis tool\cite{check}
+\end{itemize}
+
+\begin{figure}[h!]
+\centering
+   \includegraphics[scale=0.3]{checkstyle1.png}
+   \caption{CheckStyle Errors 1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+   \includegraphics[scale=0.3]{checkstyle2.png}
+   \caption{CheckStyle Errors 2}
+\end{figure}
+
+\begin{thebibliography}{9}
+\bibitem{programming}
+\url{https://en.wikipedia.org/wiki/Programming_style}
+
+\bibitem{debug}
+\url{https://en.wikipedia.org/wiki/Debugger}
+
+\bibitem{erorrs}
+\url{https://www.techtarget.com/searchsoftwarequality/definition/error-handling}
+
+\bibitem{check}
+\url{https://checkstyle.sourceforge.io/}
+
+\bibitem{stackoverflow}
+\url{https://stackoverflow.com/questions/13644624/advantage-of-using-checkstyle-rather-than-using-eclipse-built-in-code-formatter}
+\end{thebibliography}
+\end{document}
