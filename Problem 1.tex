@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{fullpage}
 \usepackage{enumitem}
-
+\usepackage{graphicx}
 
 \begin{document}
 
@@ -13,14 +13,14 @@
 
 \section{Introduction}
     $B(x,y)$ stands for the beta function, also known as the beta integral. The beta function is an eccentric function and was studied by Euler and Legendre which is why it is also called Euler's integral. Mathematically, Beta functions describes the relation between the set of inputs and outputs.\\ 
-\noindent The standard Beta function \textbf{$B(x,y)$}-
+\noindent The standard Beta function- for positive real numbers \textbf{$B(x,y)$} \cite{gammabeta}-
     \begin{itemize}
-        \item $B(x,y)$ = $\int_{0}^{1} {t^{x-1}}{(1-t)^{y-1}}dt$ \textbf{Where x,y $>$ 0} \cite{gammabeta}
+        \item $B(x,y)$ = $\int_{0}^{1} {t^{x-1}}{(1-t)^{y-1}}dt$ \textbf{Where x,y $>$ 0} 
     \end{itemize}\\
     
-\noindent The factorial form of the Beta function \textbf{$B(x,y)$}-
+\noindent The factorial form of the Beta function- for positive integers\textbf{$B(x,y)$} \cite{collegedunia}-
     \begin{itemize}
-        \item $B(x,y) = \frac{(x-1)! (y-1)!}{(x+y-1)!}$ \cite{collegedunia}
+        \item $B(x,y) = \frac{(x-1)! (y-1)!}{(x+y-1)!}$ 
     \end{itemize}
     
 \section{Domain and Co-Domain}
@@ -39,8 +39,14 @@
             \item $B(p, q)$ = $B(p, q+1) + B(p+1, q)$ 
             \item $B(p, q+1)$ = $B(p, q). [\frac{q}{p+q}]$
             \item $B(p+1, q)$ = $B(p, q). [\frac{p}{p+q}]$
+            \item $B(p, q). B (p+q, 1-q) = \pi/ p sin (\pi q)$
         \end{itemize}
     \end{itemize}
+
+\section{Context Of Use Model for the Beta Calculator}
+\begin{center}
+   \includegraphics[scale=0.5]{images/Context use.png}
+    \end{center}
 
 \begin{thebibliography}{9}
 \bibitem{gammabeta}
